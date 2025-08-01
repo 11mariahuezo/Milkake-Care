@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+  <!-- Aquí enlazo mis hojas de estilo CSS -->
+  <link rel="stylesheet" href="Productos.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Incluyo la librería de iconos Font Awesome para redes sociales -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!--Este es el header de la página con logo y título-->
+  <div class="header">
+    <!-- Logo de la marca -->
+    <img src="img/milkake.png" style="width: 70px; height: 70px;">
+    <!-- Nombre de la marca -->
+    <h1>MILKAKE CARE</h1>
+    <!-- Iconos para las redes sociales -->
+    <div class="redes_sociales">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Menú</a></li>
+      <li><a href="ProductosPágina1.html">Productos</a></li>
+      <li><a href="favoritos.html">Favoritos</a></li>
+      <li><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <div id="OpcionesdeSkinCare">
+
+    <div>
+
+      <h2 id="ProductosH2">Productos</h2>
+      <!-- Título principal de la sección de productos -->
+
+    </div>
+
+    <div id="Elige">
+
+      <h2 id="TituloDeTipoDePiel">Selecciona tu tipo de piel</h2>
+      <!-- Indicamos al usuario que debe elegir su tipo de piel -->
+
+    </div>
+
+    <div id="BotonesdeTipodePiel">
+
+      <!-- Botones para seleccionar tipo de piel, solo el primero tiene función JS ahora -->
+      <div class="Piel" id="boton-piel-grasa">Piel Grasa</div>
+      <!-- Este boton tiene id porque lo uso en JS para mostrar productos solo cuando le das click -->
+
+      <div class="Piel">Piel Seca</div>
+      <!-- Estos botones aún no tienen funcionalidad JavaScript -->
+
+      <div class="Piel">Piel Mixta</div>
+
+    </div>
+
+  </div>
+
+  <div id="ProductosImagenes">
+  <!-- Aquí están todos los productos, inicialmente ocultos con JS para que no se vean hasta que elijas tipo de piel -->
+
+    <!-- Productos arriba -->
+    <div class="DivdeProductos" id="producto1">
+
+      <div class="Divdeimagenes">
+
+        <!-- Imagen del producto -->
+        <img src="Img/Anua Heartleaf 77 Soothing Toner.webp" alt="Anua Heartleaf 77 Soothing Toner">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <!-- Nombre del producto -->
+        <p>Anua Heartleaf 77 Soothing Toner</p>
+
+        <!-- Tipo de producto -->
+        <p class="tipodeproducto">Tónico calmante</p>
+
+        <!-- Precio en negrita -->
+        <b><p class="precio">$19.69</p></b>
+
+      </div>
+
+    </div>
+
+    <!-- Más productos similares, cada uno con imagen, nombre, tipo y precio -->
+    <div class="DivdeProductos">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/Beauty of Joseon Glow Serum (Niacinamide + Propolis).jpg" alt="Beauty of Joseon Glow Serum">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">Beauty of Joseon Glow Serum (Niacinamide + Propolis)</p>
+
+        <p class="tipodeproducto">Suero facial</p>
+
+        <b><p class="precio">$24</p></b>
+
+      </div>
+
+    </div>
+
+    <div class="DivdeProductos">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/Benton Aloe Propolis Soothing Gel.png" alt="Benton Aloe Propolis Soothing Gel">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">Benton Aloe Propolis Soothing Gel</p>
+
+        <p class="tipodeproducto">Gel calmante/hidratante</p>
+
+        <b><p class="precio">$12.89</p></b>
+
+      </div>
+
+    </div>
+
+    <div class="DivdeProductos">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/COSRX Low pH Good Morning Gel Cleanser.jpg" alt="COSRX Low pH Good Morning Gel Cleanser">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">COSRX Low pH Good Morning Gel Cleanser</p>
+
+        <p class="tipodeproducto">Limpiador facial en gel</p>
+
+        <b><p class="precio">$11.90</p></b>
+
+      </div>
+
+    </div>
+
+    <!-- Productos abajo -->
+    <div class="DivdeProductos2">
+
+      <div class="Divdeimagenes">
+      
+        <img src="Img/Innisfree Super Volcanic Pore Clay Mask.jpg" alt="Innisfree Super Volcanic Pore Clay Mask">
+      
+      </div>
+      
+      <div class="Divdedescripcióndeproducto">
+      
+        <p class="Nombredeproducto">Innisfree Super Volcanic Pore Clay Mask</p>
+      
+        <p class="tipodeproducto">Mascarilla de arcilla</p>
+      
+        <b><p class="precio">$18</p></b>
+      
+      </div>
+
+    </div>
+
+    <div class="DivdeProductos2">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/Isntree Green Tea Fresh Toner.png" alt="Isntree Green Tea Fresh Toner">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">Isntree Green Tea Fresh Toner</p>
+
+        <p class="tipodeproducto">Tónico equilibrante de sebo</p>
+
+        <b><p class="precio">$15.92</p></b>
+
+      </div>
+
+    </div>
+
+    <div class="DivdeProductos2">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/Medicube Zero Pore Pads.jpeg" alt="Medicube Zero Pore Pads">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">Medicube Zero Pore Pads</p>
+
+        <p class="tipodeproducto">Pads exfoliantes</p>
+
+        <b><p class="precio">$18.90</p></b>
+
+      </div>
+
+    </div>
+
+    <div class="DivdeProductos2">
+
+      <div class="Divdeimagenes">
+
+        <img src="Img/Some By Mi AHA-BHA-PHA 30 Days Miracle Toner.webp" alt="Some By Mi AHA-BHA-PHA 30 Days Miracle Toner">
+
+      </div>
+
+      <div class="Divdedescripcióndeproducto">
+
+        <p class="Nombredeproducto">Some By Mi AHA-BHA-PHA 30 Days Miracle Toner</p>
+
+        <p class="tipodeproducto">Tónico exfoliante</p>
+
+        <b><p class="precio">$15.80</p></b>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script>
+  // Al cargar la página, oculto la sección de productos para que no se vean sin elegir tipo de piel
+  document.getElementById("ProductosImagenes").style.display = "none";
+
+  // Agrego evento al botón "Piel Grasa" para mostrar productos al hacer click
+  document.getElementById("boton-piel-grasa").addEventListener("click", function() {
+    // Cambio display a flex para mostrar todos los productos de piel grasa
+    document.getElementById("ProductosImagenes").style.display = "flex";
+  });
+
+  // Agrego evento para cuando haces click en el producto con id "producto1"
+  // Te redirige a una página de detalles específica de ese producto
+  document.getElementById("producto1").addEventListener("click", function() {
+    window.location.href = "detallesdeproducto.html";
+  });
+</script>
+
+    
+</body>
+</html>

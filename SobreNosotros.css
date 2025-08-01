@@ -1,0 +1,164 @@
+
+body{
+    background-color:white;
+}
+
+.header{
+
+    background-color: #97C1A9;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.redes_sociales{
+   
+    color: #000;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    
+}
+.redes_sociales a:hover{
+    color: #021306;
+
+}
+h1{
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Este es el menú*/
+.menu{
+    background-color: #d4e8d4;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.2);
+    background-size: 80%;
+    
+    
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 30px;
+}
+.menu ul li{
+    border-right: 1px solid #CCC;
+    padding-right: 20px;
+}
+.menu ul li :last-child{
+    border-right: none;
+}
+.menu a{
+    text-decoration: none;
+    display: inline;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+a:hover{
+            
+    color: rgb(5, 43, 5);
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.imagen{
+    width: 100%;
+    height: 800px;
+}
+.contenedor{
+    border-radius: 20px;
+    background-color: #d4e8d4;
+    width:100% ;
+    height:1170px ;
+    padding: auto;
+}
+
+.Padre{
+    display: flex;
+    width: 90%;
+    height: 370x;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+    border-radius: 270px;
+}
+.h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.NuestrosProductos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: justify;
+    font-size: large;
+    
+}
+.Contenedor2{
+    border-radius: 20px;
+    background-color: #d4e8d4;
+    width:100% ;
+    height:270px ;
+    padding: auto;
+}
+.h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.visión{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: justify;
+    font-size: large;
+}
+
+.Contenedor3{
+    border-radius: 20px;
+    background-color: #d4e8d4;
+    width:100% ;
+    height:270px ;
+    padding: auto;
+}
+
+.h3{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Misión{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: justify;
+    font-size: large;
+}
+
+
+
+/*Este es el footer*/
+.footer{
+    background-color:#d4e8d4 ;
+    width: 100%;
+    height: 100px;
+    margin-top: auto;
+    padding-top: 5px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+

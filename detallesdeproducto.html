@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detallesdelproducto1</title>
+    <!-- Aquí enlazo los estilos CSS para esta página -->
+    <link rel="stylesheet" href="DetallesdelProducto1.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+</head>
+
+<body>
+
+    <!-- Cabecera de la página con logo, nombre y redes sociales -->
+    <div class="header">
+
+        <!-- Logo de la marca con tamaño y margen para separar del texto -->
+        <img src="img/milkake.png" style="width: 70px; height: 70px; margin-right: 15px;" alt="Logo MilKake Care" />
+
+        <!-- Nombre de la marca -->
+        <h1>MILKAKE CARE</h1>
+
+        <!-- Contenedor de iconos de redes sociales -->
+        <div class="redes_sociales">
+
+            <!-- Enlace a Facebook, abre en pestaña nueva y evita vulnerabilidades con rel -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Enlace a Instagram, igual que el anterior -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-instagram"></i></a>
+
+        </div>
+
+    </div>
+
+    <!-- Menú de navegación con enlaces a otras páginas -->
+    <nav class="menu">
+
+        <ul>
+
+            <li><a href="index.html">Menú</a></li>
+
+            <li><a href="productos.html">Productos</a></li>
+
+            <li><a href="favoritos.html">Favoritos</a></li>
+
+            <li><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Contenedor principal para el producto con id para identificarlo -->
+    <div id="producto1">
+
+        <!-- Sección que muestra el nombre del producto -->
+        <div id="nombre-producto-1">
+
+            <p id="nombredelproducto1">Anua Heartleaf 77 Soothing Toner</p>
+
+        </div>
+
+        <!-- Contenedor que agrupa la imagen y la descripción/precio del producto -->
+        <div id="productos-principal">
+
+            <!-- Parte de las imágenes del producto -->
+            <div id="productos-imagenes">
+
+                <!-- Imagen grande principal -->
+                <div id="producto-imagen-grande">
+
+                    <img src="Img/Anua Heartleaf 77 Soothing Toner.webp" id="imagengrande"
+                        alt="Anua Heartleaf 77 Soothing Toner" />
+
+                </div>
+
+                <!-- Galería con imágenes pequeñas adicionales -->
+                <div id="productos-imagenes-pequeñas">
+
+                    <!-- Imagen pequeña 1 -->
+                    <img src="Img/Anua Heartleaf 77 Soothing Toner 2.jpg" class="imagen-pequeña" alt="Imagen pequeña 1" />
+
+                    <!-- Imagen pequeña 2 -->
+                    <img src="Img/Anua Heartleaf 77 Soothing Toner 3.webp" class="imagen-pequeña" alt="Imagen pequeña 2" />
+
+                </div>
+
+            </div>
+
+            <!-- Parte del texto, descripción y formulario de compra -->
+            <div id="productos-texto">
+
+                <!-- Descripción detallada del producto -->
+                <div id="descripcion-producto-1">
+
+                    <p id="Descripciondelproducto1">Este tónico calmante es perfecto para piel grasa y propensa a
+                        imperfecciones. Gracias a su alto contenido (77%) de extracto de hoja de corazón, ayuda a controlar
+                        el exceso de sebo mientras reduce la inflamación y el enrojecimiento. Su fórmula ligera y libre de
+                        aceites equilibra la piel, minimiza los poros y deja una sensación fresca sin resecar, ayudando a
+                        mantener tu piel limpia y matificada durante todo el día.</p>
+
+                </div>
+
+                <!-- Precio del producto destacado -->
+                <div id="preciodelproducto1">
+
+                    <p id="precio">$19.69</p>
+
+                </div>
+
+                <!-- Botón que muestra el formulario para comprar -->
+                <button id="btn-comprar">Comprar</button>
+
+                <!-- Formulario para realizar la compra, inicialmente oculto -->
+                <form id="form-compra" style="display:none; margin-top:20px;">
+
+                    <!-- Campo para ingresar el nombre del comprador -->
+                    <label for="nombre">Nombre:</label><br />
+                    <input type="text" id="nombre" name="nombre" required
+                        style="width:100%; padding:5px; margin-bottom:10px;" />
+
+                    <!-- Campo para ingresar la dirección de envío -->
+                    <label for="direccion">Dirección:</label><br />
+                    <textarea id="direccion" name="direccion" rows="3" required
+                        style="width:100%; padding:5px; margin-bottom:10px;"></textarea>
+
+                    <!-- Campo para ingresar número telefónico -->
+                    <label for="telefono">Número de teléfono:</label><br />
+                    <input type="tel" id="telefono" name="telefono" required
+                        style="width:100%; padding:5px; margin-bottom:10px;" />
+
+                    <!-- Campo para ingresar el número de tarjeta de crédito -->
+                    <label for="tarjeta">Tarjeta de crédito:</label><br />
+                    <input type="text" id="tarjeta" name="tarjeta" required maxlength="19" placeholder="XXXX XXXX XXXX XXXX"
+                        style="width:100%; padding:5px; margin-bottom:10px;" />
+
+                    <!-- Botón para enviar el formulario y ordenar el producto -->
+                    <button type="submit"
+                        style="padding:8px 15px; background-color: rgb(3, 80, 3); color: white; border: none; border-radius: 5px; cursor: pointer;">Ordenar</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // Selecciono el botón Comprar y el formulario de compra en el DOM
+        const btnComprar = document.getElementById('btn-comprar');
+        const formCompra = document.getElementById('form-compra');
+
+        // Cuando se clickea el botón Comprar
+        btnComprar.addEventListener('click', () => {
+            // Si el formulario está oculto, lo muestro y desactivo el botón para evitar clicks repetidos
+            if (formCompra.style.display === 'none') {
+                formCompra.style.display = 'block';
+                btnComprar.disabled = true;
+            }
+        });
+
+        // Cuando el formulario se envía
+        formCompra.addEventListener('submit', (e) => {
+            // Prevengo el comportamiento por defecto de recargar la página
+            e.preventDefault();
+
+            // Muestro un mensaje de agradecimiento usando el nombre ingresado en el formulario
+            alert('Gracias por tu orden, ' + document.getElementById('nombre').value + '!');
+
+            // Reseteo el formulario para limpiar los campos
+            formCompra.reset();
+
+            // Oculto nuevamente el formulario y activo el botón Comprar
+            formCompra.style.display = 'none';
+            btnComprar.disabled = false;
+        });
+    </script>
+
+</body>
+
+</html>

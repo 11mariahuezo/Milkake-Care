@@ -1,0 +1,120 @@
+body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#producto1 {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#nombre-producto-1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#nombredelproducto1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 40, 0);
+    margin: 0;
+}
+
+#productos-principal {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#productos-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 350px;
+}
+
+#producto-imagen-grande {
+    width: 350px;
+    height: 400px;
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagengrande {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#productos-imagenes-pequeñas {
+    display: flex;
+    gap: 10px;
+}
+
+.imagen-pequeña {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imagen-pequeña:hover {
+    transform: scale(1.05);
+}
+
+#productos-texto {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#descripcion-producto-1 {
+    font-size: 16px;
+    color: rgb(25, 25, 25);
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+#preciodelproducto1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(3, 80, 3);
+    margin: 0;
+}
+
+/* Estilo para el botón "Comprar" */
+#btn-comprar {
+    padding: 10px 20px;
+    background-color: rgb(3, 80, 3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hover del botón */
+#btn-comprar:hover {
+    background-color: rgb(0, 60, 0);
+}
